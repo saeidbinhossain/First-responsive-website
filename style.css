@@ -45,12 +45,24 @@
 .influencer-link a {
    text-decoration: none;
    color: aliceblue;
-
+   align-items: center;
+   justify-content: center;
 }
 
 /* ------------
 Collections
 ------------- */
+.box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+.Collection{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
 .collection-title{
    font-size: 28px;
    text-align: center;
@@ -59,7 +71,7 @@ Collections
 .collection{
    width: 329px;
 height: 476px;
-box-shadow: 0px 0px 40px;
+/* box-shadow: 0px 0px 40px; */
 display: flex;
 flex-direction: column;
 }
@@ -74,4 +86,38 @@ padding-top: 14px;
 }
 .fa-star{
    color:  #FB8200;
+}
+.more a{
+   text-decoration: none;
+   color:  #E02C6D;
+   font-size: 16px;
+   font-weight: 700;
+}
+.more{
+   position: absolute;
+   right: 460px;
+   
+}
+/* Footer part */
+
+.copyright{
+   background-color: brown;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.influence-products{
+   color: #FFFFFF;
+   font-size: 24px;
+   margin-bottom: 0px;
+   margin-top: 30px;
+}
+.copyright-info{
+   margin-top: 10px;
+   color: #D9DBE1;
+}
+.rights{
+   display: flex;
+   justify-content: center;
 }
